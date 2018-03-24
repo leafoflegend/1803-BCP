@@ -12,8 +12,6 @@ console.log(chalk[returnRandomColor()]('------------------------------'));
 
 const c = (...args) => console.log(...args);
 
-
-
 // else should be on another line, as well as console.log('true')
 // semicolons
 // spelling errors
