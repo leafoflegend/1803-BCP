@@ -95,3 +95,5 @@ c(removeZero(606.203)); // => 66.23
 // Bonus: Write the function without ever using equality comparison operators (== or ===). Hint: You'll have to use coercion and truthy/falsey.
 
 // VSCode / ESLint / ETC...
+
+// Hi!
