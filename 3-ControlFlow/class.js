@@ -289,6 +289,7 @@ const formThree = param1 => param1 + '  This one is very crazy looking right? Th
 // Parameters dont exist episode 1:
 // Parameters are just a way for us to name the indexes of the arguments.
 function whatEvenIsAParam () {
+  // Old hack - TLDR: arguments is not an array its a really weird object from the 90's, im coercing it into an array below
   var ourArgs = Array.prototype.slice.call(arguments);
 
   for (var i = 0; i < ourArgs.length; ++i) {
