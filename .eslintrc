@@ -29,6 +29,8 @@
     "no-plusplus": 1,
     "no-console": 1,
     "no-var": 0,
-    "vars-on-top": 0
+    "vars-on-top": 0,
+    "no-restricted-syntax": 0,
+    "guard-for-in": 0
   }
 }
