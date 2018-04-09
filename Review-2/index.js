@@ -294,15 +294,15 @@ const eliotsAccount = createBankAccount('Eliot', 100);
 // We abuse that when using closure - we make a reference to the scope WHEN WE DID HAVE ACCESS and then WE CONTINUE TO HAVE ACCESS FOREVER, EVEN AFTER RETURNING OUT OF THAT SCOPE.
 
 // partial
-const partial = (callback, argOne) => {
-  return (argTwo) => {
-    return callback(argOne, argTwo);
-  }
-}
+// const partial = (callback, argOne) => {
+//   return (argTwo) => {
+//     return callback(argOne, argTwo);
+//   }
+// }
 
-// Partial here becomes: (b) => 1 + b
+// // Partial here becomes: (b) => 1 + b
 
-const addOne = partial((a, b) => a + b, 1);
-c(addOne(1));
-c(addOne(10));
-c(addOne(20));
+// const addOne = partial((a, b) => a + b, 1);
+// c(addOne(1));
+// c(addOne(10));
+// c(addOne(20));
