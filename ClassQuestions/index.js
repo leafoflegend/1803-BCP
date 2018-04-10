@@ -50,3 +50,25 @@ const discoverDupesFancy = arr => Object
 
 console.log(discoverDupes(dupeArray));
 console.log(discoverDupesFancy(dupeArray));
+
+function multiFilter (arrOfFilters, arr) {
+  let filteredArray = arr.slice();
+  
+  arrOfFilters.forEach(function (filterFunc) {
+    filteredArray = filteredArray.filter(filterFunc);
+  });
+
+  return filteredArray;
+}
+
+const someArray = [1, 2, 3, 4, 5];
+
+function greaterThan3 (num) {
+  return num > 3;
+}
+
+function isOdd (num) {
+  return num % 2 === 1;
+}
+
+console.log(multiFilter([greaterThan3, isOdd], someArray));
